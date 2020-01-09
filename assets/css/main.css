@@ -1,3 +1,5 @@
+/*Colours*/
+/*Fonts*/
 *,
 *::after,
 *::before {
@@ -16,7 +18,7 @@ html, body {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Akronim", cursive;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -24,9 +26,14 @@ body {
   color: #ffffff;
 }
 
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .background-video {
   position: fixed;
-  z-index: -1;
+  z-index: -2;
   top: 0;
   left: 0;
   bottom: 0;
@@ -34,10 +41,17 @@ body {
   min-height: 100%;
 }
 
+/*Custom video controls*/
+.play-pause {
+  position: fixed;
+  z-index: 10;
+}
+
 .primary-menu {
   position: absolute;
   height: 100%;
   width: 100%;
+  z-index: -1;
 }
 
 .primary-menu li {
@@ -47,12 +61,16 @@ body {
 }
 
 .primary-menu li a {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .primary-menu li:nth-child(1) {
   left: 0;
   top: 0;
+}
+
+.primary-menu li:nth-child(1) a {
+  font-family: "Times New Roman", sans-serif;
 }
 
 .primary-menu li:nth-child(2) {
@@ -65,8 +83,22 @@ body {
   bottom: 0;
 }
 
+.primary-menu li:nth-child(3) a {
+  font-family: "Nova Cut", cursive;
+}
+
 .primary-menu li:nth-child(4) {
   right: 0;
   bottom: 0;
+}
+
+.custom-logo {
+  position: absolute;
+  max-width: 200px;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=main.css.map */
