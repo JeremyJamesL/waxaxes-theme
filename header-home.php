@@ -8,7 +8,7 @@
         <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 
 <!-- Background video
 ======================= -->
@@ -39,7 +39,6 @@
 </video><!-- #background video end -->
 
 
-
 <!-- Background video controls
 ========================== -->
 
@@ -59,7 +58,7 @@
 if( has_nav_menu( 'primary' ) ) {
     wp_nav_menu( [
         'theme_location'        =>  'primary',
-        'container'             =>  'nav',
+        'container'             =>  '<nav>',
         'menu_class'            =>  'primary-menu',
         'fallback_cb'           =>  false,
         'depth'                 =>  0
@@ -67,15 +66,3 @@ if( has_nav_menu( 'primary' ) ) {
 }
 
 ?><!-- #primary navigation end -->
-
-
-<!-- Custom logo (for every page other than home)
-================================================= -->
-<?php 
-
-    if( function_exists( 'the_custom_logo' ) ) {
-        the_custom_logo();
-    }  
-
-?>
-<!-- #custom logo end -->

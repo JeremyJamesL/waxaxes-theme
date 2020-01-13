@@ -8,7 +8,7 @@ function wa_enqueue() {
     // Register styles
     wp_register_style( 'wa_google_font_novacut', 'https://fonts.googleapis.com/css?family=Nova+Cut&display=swap', [], false );
     wp_register_style( 'wa_google_font_akronim', 'https://fonts.googleapis.com/css?family=Akronim&display=swap', [], false );
-    wp_register_style( 'wa_style_main', $uri . '/assets/css/main.css', [], $ver );
+    wp_register_style( 'wa_style_main', $uri . '/assets/scss/main.css', [], $ver );
 
     // Register scripts
     wp_register_script( 'wa_script_main', $uri . '/assets/js/main.js', [], $ver, true );

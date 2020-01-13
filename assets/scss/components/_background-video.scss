@@ -1,0 +1,16 @@
+.background-video {
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/*Custom video controls*/
+
+.play-pause {
+    position: fixed;
+    z-index: 10;
+}

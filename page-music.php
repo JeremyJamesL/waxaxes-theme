@@ -2,10 +2,10 @@
 
 <main class="page-content">
 
-<section class="section-music-videos">
+<section class="section-audio-clips">
 
-<!-- Music Videos 
-================= -->
+<!-- Music Audios Clips
+======================= -->
 <?php
 
 if( have_rows('video_urls') ): ?>
@@ -30,7 +30,7 @@ if( have_rows('video_urls') ): ?>
 
 else : endif;
 
-?><!-- #end music videos -->
+?><!-- #end music audios clips -->
 
 </section>
 

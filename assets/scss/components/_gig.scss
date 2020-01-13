@@ -1,0 +1,9 @@
+.gig-title {
+    font-size: 4rem;
+    text-align: center;
+
+    @include respond(phone) {
+        font-size: 25px;
+    }
+
+}

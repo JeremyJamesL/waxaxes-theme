@@ -1,0 +1,48 @@
+//MENU
+
+.primary-menu {
+
+    li {
+        position: fixed;
+        display: inline-block;
+        padding: 2rem;
+        z-index: 10;
+
+        a {
+            font-size: 4rem;
+            line-height: 1;
+        }
+
+    }
+
+    li:nth-child(1) {
+        left: 0;
+        top: 0;
+
+        a {
+            font-family: $font-tertiary;
+        }
+
+    }
+
+    li:nth-child(2) {
+        right: 0;
+        top: 0;
+    }
+
+    li:nth-child(3) {
+        left: 0;
+        bottom: 0;
+
+        a {
+            font-family: $font-secondary;
+        }
+
+    }
+
+    li:nth-child(4) {
+        right: 0;
+        bottom: 0;
+    }
+
+}
