@@ -1,0 +1,115 @@
+//Change background on Cart and Checkout pages
+
+.woocommerce-cart,
+.woocommerce-checkout {
+    background-color: #000;
+}
+
+
+// Lists
+li.product {
+    list-style: none;
+}
+
+//'Shop' header area
+
+.woocommerce-products-header {
+    text-align: center;
+}
+
+//Product title on archive page
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    font-size: 3.6rem;
+}
+
+//Cost of product
+
+.woocommerce ul.products li.product .price {
+    font-size: 2rem;
+}
+
+//Product title on single product page
+.woocommerce div.product .product_title {
+    margin-bottom: 0;
+}
+
+//Price on single product page
+.woocommerce div.product p.price {
+    margin-bottom: 2rem;
+}
+
+//Button 
+.woocommerce button.button.alt,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+button[name="apply_coupon"], 
+button[name="update_cart"] {
+    font-family: $font-primary;
+    background-color: #ebe9eb;
+    color: #515151;
+
+    &:hover {
+        background-color: #dfdcde;
+        color: #515151;
+    }
+
+}
+
+
+//Change to 1 column on phones
+@include respond(phone) {
+
+    .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+        width: 100%;
+    }
+
+}
+
+
+//Hide SKU
+
+.sku_wrapper {
+    display: none;
+}
+
+//Product short description
+.woocommerce-product-details__short-description {
+    margin-bottom: 1rem;
+}
+
+
+//Remove quantity option from single product page
+.single-product div.quantity {
+    display: none;
+}
+
+//Shop table
+
+.woocommerce table.shop_table {
+    background-color: black;
+    border: 1px solid;
+
+    tr {
+        // border-color: #fff;
+    }
+}
+
+// Changes border on shop table
+.woocommerce table.shop_table td {
+    border-top: 1px solid white; // Changes the border on the cart and checkout pages
+}
+
+// Gets rid of coupon section on checkout page
+.woocommerce-form-coupon-toggle {
+    display: none;
+}
+
+// checkout #payment
+
+.checkout #payment {
+    background-color: #131313;
+}
+
+.woocommerce-privacy-policy-text>p{
+    margin-bottom: 1rem;
+}

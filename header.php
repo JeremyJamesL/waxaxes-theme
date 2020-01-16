@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-        <meta charset="UTF-8">
+        <meta charset="<?php bloginfo( 'charset' ); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
+        <title></title>
         <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 
 <!-- Background video
 ======================= -->
 
-<video autoplay muted loop class="background-video" id="video"> <!-- Don't forget to add back autoplay -->
+<?php  if(is_page([
+'basket', 'checkout'
+])) {
+    echo ''; // Don't autoplay on check and basket pages
+} else {  ?>
+
+<video autoplay muted loop class="background-video" id="video">
     <source src="<?php if(get_theme_mod('wa_customise_background_video_webm')) {  
 
             echo get_theme_mod('wa_customise_background_video_webm');
@@ -38,17 +44,7 @@
 
 </video><!-- #background video end -->
 
-
-
-<!-- Background video controls
-========================== -->
-
-<!-- <div id="video-controls">
-    <button type="button" class="play-pause" id="play-pause">+</button>
-</div> -->
-
-<!-- #End background video controls -->
-
+<?php } ?>
 
 
 <!-- Primary Navigation

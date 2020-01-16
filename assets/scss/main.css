@@ -45,10 +45,13 @@ html, body {
 body {
   font-family: "Akronim", cursive;
   font-weight: 400;
-  font-size: 16px;
   font-size: 1.6rem;
-  line-height: 1.7;
+  line-height: 1.3;
   color: #ffffff;
+}
+
+p {
+  font-size: 1.8rem;
 }
 
 *,
@@ -63,6 +66,34 @@ body {
 a {
   color: #ffffff;
   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+h5 {
+  font-size: 2.4rem;
+}
+
+h6 {
+  font-size: 2rem;
 }
 
 .background-video {
@@ -81,7 +112,7 @@ a {
   z-index: 10;
 }
 
-.custom-logo {
+img.custom-logo {
   position: absolute;
   top: 2rem;
   max-width: 100px;
@@ -95,12 +126,12 @@ a {
 .primary-menu li {
   position: fixed;
   display: inline-block;
-  padding: 2rem;
+  padding: 1rem;
   z-index: 10;
 }
 
 .primary-menu li a {
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -168,6 +199,15 @@ a {
   }
 }
 
+.soundcloud-embed iframe {
+  width: 100%;
+  height: 200px;
+}
+
+.soundcloud-embed:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
 .row {
   max-width: 100rem;
   margin: 0 auto;
@@ -176,10 +216,95 @@ a {
 }
 
 .row:not(:last-child) {
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 
 .page-content {
-  padding: 20rem 0;
+  padding: 20rem 70px 10rem;
+}
+
+.woocommerce-cart,
+.woocommerce-checkout {
+  background-color: #000;
+}
+
+li.product {
+  list-style: none;
+}
+
+.woocommerce-products-header {
+  text-align: center;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+  font-size: 3.6rem;
+}
+
+.woocommerce ul.products li.product .price {
+  font-size: 2rem;
+}
+
+.woocommerce div.product .product_title {
+  margin-bottom: 0;
+}
+
+.woocommerce div.product p.price {
+  margin-bottom: 2rem;
+}
+
+.woocommerce button.button.alt,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+button[name="apply_coupon"],
+button[name="update_cart"] {
+  font-family: "Akronim", cursive;
+  background-color: #ebe9eb;
+  color: #515151;
+}
+
+.woocommerce button.button.alt:hover,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover,
+button[name="apply_coupon"]:hover,
+button[name="update_cart"]:hover {
+  background-color: #dfdcde;
+  color: #515151;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+    width: 100%;
+  }
+}
+
+.sku_wrapper {
+  display: none;
+}
+
+.woocommerce-product-details__short-description {
+  margin-bottom: 1rem;
+}
+
+.single-product div.quantity {
+  display: none;
+}
+
+.woocommerce table.shop_table {
+  background-color: black;
+  border: 1px solid;
+}
+
+.woocommerce table.shop_table td {
+  border-top: 1px solid white;
+}
+
+.woocommerce-form-coupon-toggle {
+  display: none;
+}
+
+.checkout #payment {
+  background-color: #131313;
+}
+
+.woocommerce-privacy-policy-text > p {
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

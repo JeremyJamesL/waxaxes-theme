@@ -7,5 +7,7 @@ function wa_setup_theme() {
 
     //Theme Support
     add_theme_support( 'custom-logo');
+    add_theme_support( 'title-tag');
+    add_theme_support( 'woocommerce' );
     
 }

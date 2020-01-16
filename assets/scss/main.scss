@@ -14,6 +14,7 @@
 @import 'components/homepage-logo';
 @import 'components/music-video';
 @import 'components/gig';
+@import 'components/soundcloud-embed';
 
 //Layout
 @import 'layout/grid';
@@ -22,3 +23,5 @@
 //Page
 @import 'pages/page-videos';
 
+//Vendors
+@import 'vendors/woocommerce-override';
