@@ -1,0 +1,16 @@
+// Remove 'required fields' label
+
+.nf-form-fields-required {
+    display: none;
+}
+
+.nf-after-form-content, .nf-before-form-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+// Change button font 
+
+.nf-form-content input[type=button] {
+    font-family: inherit;
+}

@@ -5,6 +5,17 @@ a {
     text-decoration: none;
 }
 
+main a {
+    text-decoration: underline;
+    transition: all .2s ease;
+    display: inline-block;
+    
+    &:hover {
+        transform: skewX(-5deg);
+    }
+
+}
+
 //Headings
 
 

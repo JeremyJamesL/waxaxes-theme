@@ -1,3 +1,5 @@
+// Soundcloud
+
 .soundcloud-embed {
 
     iframe {
@@ -5,8 +7,18 @@
     height: 200px;
     }
 
-    &:not(:last-child) {
-        margin-bottom: 4rem;
+    margin-bottom: 4rem;
+
+}
+
+// Spotify
+
+.wp-block-embed-spotify {
+
+    iframe {
+        width: 100%;
     }
+
+    margin-bottom: 4rem;
 
 }

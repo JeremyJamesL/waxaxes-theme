@@ -15,6 +15,8 @@ if( have_rows('upcoming_gig') ): ?>
 
         <div class="row">
 
+            <!-- Start gig
+            ============== -->
             <div class="gig">
 
                 <h2 class="gig-title" 
@@ -22,7 +24,18 @@ if( have_rows('upcoming_gig') ): ?>
                 <?php $font = get_sub_field( 'font_type' );
                     
                     if( $font ) { ?>
-                            style="font-family: '<?php echo $font; ?>', cursive;"
+                            style="font-family: 
+
+                            <?php echo $font; ?>, 
+
+                            <?php if( $font === 'Times New Roman' ) {
+                                echo 'sans-serif;';
+                            } else {
+                                echo 'cursive;';
+                            }
+                            echo '"'
+                            ?>
+
                     <?php }
                 
                 ?>>
@@ -39,7 +52,7 @@ if( have_rows('upcoming_gig') ): ?>
 
                 </h2>
 
-            </div>
+            </div><!-- #end gig -->
 
         </div>
 
@@ -47,10 +60,18 @@ if( have_rows('upcoming_gig') ): ?>
 
     endwhile; ?>
 
-    
 <?php    
 
-else : endif;
+else :
+    
+echo '<div class="row txt-center">
+
+    <p>Check back soon for more dates</p>
+
+</div>';
+
+endif;
+
 
 ?><!-- #end music videos -->
 

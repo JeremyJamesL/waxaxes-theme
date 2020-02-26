@@ -1,6 +1,8 @@
 //Abstracts
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
+@import 'abstracts/animations';
+@import 'abstracts/helpers';
 
 //Base
 @import 'base/base';
@@ -9,9 +11,9 @@
 
 //Components
 @import 'components/background-video';
-@import 'components/custom-logo';
+// @import 'components/custom-logo';
 @import 'components/primary-menu';
-@import 'components/homepage-logo';
+@import 'components/logos';
 @import 'components/music-video';
 @import 'components/gig';
 @import 'components/soundcloud-embed';
@@ -22,6 +24,9 @@
 
 //Page
 @import 'pages/page-videos';
+@import 'pages/page-contact';
+@import 'pages/404';
 
 //Vendors
 @import 'vendors/woocommerce-override';
+@import 'vendors/ninja-forms-override';

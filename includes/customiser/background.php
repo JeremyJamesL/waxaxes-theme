@@ -13,7 +13,7 @@ function wa_background_customiser($wp_customize){
 
     //Section
     $wp_customize->add_section( 'wa_background_section',[ 
-        'title'             =>      __( 'Wax Axes Background Settings' ),
+        'title'             =>      __( 'Wax Axes Background Settings', 'waxaxes' ),
         'priority'          =>      30,
         'panel'             =>      'wa_theme_panel'
     ] ) ;     

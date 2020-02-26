@@ -9,7 +9,7 @@ while( have_posts() ){
 <main class="page-content">
 
 <!-- Main Content
-======================= -->
+================= -->
 
 <section>
 
@@ -17,7 +17,7 @@ while( have_posts() ){
         <?php the_content(); ?> 
     </div>
 
-</section><!-- #end music audios clips -->
+</section><!-- #end main content -->
 
 <?php } ?>
 

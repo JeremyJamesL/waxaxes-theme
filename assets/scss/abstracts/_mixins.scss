@@ -9,6 +9,11 @@
     transform: translateX( -50% );
 }
 
+@mixin transform-vertical-center {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 //Media Query Manager
 
 /*

@@ -1,0 +1,24 @@
+// Logos
+
+.homepage-logo, .custom-logo {
+    position: absolute;
+    height: auto;
+    animation: changecolour 3s infinite alternate;
+    -webkit-animation: changecolour 3s infinite alternate;
+    -moz-animation: changecolour 3s infinite alternate;
+    -o-animation: changecolour 3s infinite alternate;
+}
+
+.homepage-logo {
+    @include transform-center;
+    max-width: 200px;
+}
+
+
+.custom-logo {
+    top: 2rem;
+    max-width: 100px;
+    z-index: 3;
+    @include transform-horizontal-center;
+
+}
