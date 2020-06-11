@@ -1,7 +1,7 @@
 <?php
 
 // Setup
-define( 'WA_DEV_MODE', true ); // Determines development or production mode
+define( 'WA_DEV_MODE', false ); // Determines development or production mode
 
 // Includes
 include( get_theme_file_path( '/includes/front/enqueue.php' ) );
@@ -16,6 +16,12 @@ add_action( 'wp_enqueue_scripts', 'wa_enqueue' );
 add_action( 'after_setup_theme', 'wa_setup_theme' );
 add_action( 'after_setup_theme', 'woocommerceoverride' );
 add_action( 'customize_register', 'wa_customise_register' );
+add_action( 'wp_enqueue_scripts', 'wa_disable_woocommerce_cart_fragments', 11 ); 
 
+
+// Custom Functions
+function wa_disable_woocommerce_cart_fragments() { 
+   wp_dequeue_script( 'wc-cart-fragments' ); 
+}
 
   

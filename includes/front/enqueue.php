@@ -14,6 +14,7 @@ function wa_enqueue() {
     wp_enqueue_style( 'wa_google_font_novacut' );
     wp_enqueue_style( 'wa_google_font_akronim' );
     wp_enqueue_style( 'wa_style_main' );
+	
 
     // Enqueue scripts
     wp_enqueue_script( 'jquery' );
